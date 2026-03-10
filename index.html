@@ -31,7 +31,68 @@
 </head>
 
 <body>
-    <main class="w-11/12 mx-auto sticky top-10">
+
+    <header class=" mb-24">
+        <nav class="navbar bg-[#15803D] shadow-sm sm:px-5 md:px-20">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <a class="text-lg sm:text-2xl text-white font-bold">Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#FFFFFF] font-medium">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-warning rounded-full text-[#15803D] font-medium">Plant a Tree</a>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class=" bg-[#CFF0DC]">
+            <div class="hero-content text-center relative">
+                <div class="max-w-md py-24 z-20">
+                    <h1 class="text-2xl font-extrabold sm:text-3xl md:text-4xl sm:font-bold text-[#1F2937]">Plant a
+                        Tree, Grow a Future</h1>
+                    <p class="py-6 text-[#1F2937]">
+                        Join our mission to plant 1 million trees and make the Earth greener for future generations.
+                    </p>
+                    <button class="btn btn-warning rounded-full text-[#15803D] font-medium">Plant a Tree</button>
+                </div>
+
+                <!-- img left -->
+            <div class="absolute bottom-0 -left-10 object-cover w-[480px] h-full hidden md:inline opacity-50 xl:opacity-100">
+                <img class="h-full" src="./assets/hero-leaf1.png" alt="">
+            </div>
+            <!-- img right -->
+            <div class="absolute bottom-0 -right-10 object-cover w-[480px] h-full opacity-50 xl:opacity-100 ">
+                <img class="h-full" src="./assets/hero-leaf2.png" alt="">
+            </div>
+
+            </div>
+            
+        </div>
+    </header>
+
+
+
+    <main class="w-11/12 mx-auto sticky top-10 ">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-green-700 mb-8">Choose Your Trees</h2>
 
         <!-- categories, tree & cart container -->
@@ -83,13 +144,16 @@
                 <h2 class="text-2xl font-bold mb-4"><i class="fa-solid fa-cart-shopping"></i> Cart</h2>
                 <!-- cart -->
                 <div id="card-container" class="space-y-4">
-                    
+
                 </div>
 
                 <!-- total price -->
-                <div id="total-price-container" class="bg-slate-100 hidden justify-between items-center my-3 rounded-lg p-3 ">
+                <div id="total-price-container"
+                    class="bg-slate-100 hidden justify-between items-center my-3 rounded-lg p-3 ">
                     <span class=" font-bold text-xl">Total</span>
-                    <span class="text-2xl font-extrabold bg-linear-to-r from-red-700 to-green-500 bg-clip-text text-transparent">৳ <span id="total-price" >0</span></span>
+                    <span
+                        class="text-2xl font-extrabold bg-linear-to-r from-red-700 to-green-500 bg-clip-text text-transparent">৳
+                        <span id="total-price">0</span></span>
                 </div>
             </div>
         </div>
