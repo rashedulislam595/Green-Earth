@@ -84,7 +84,7 @@ const displayTree = (trees) => {
                         <div class="py-2 px-3">
                             <h2  class="card-title">${tree.name}</h2>
                             <p class="line-clamp-2 text-[#1f2937b7]">${tree.description}</p>
-                            <div class="flex justify-between my-2 ">
+                            <div class="flex justify-between my-2 flex-wrap">
                                <div class="badge bg-[#15803c48] text-[#15803D] font-medium ">${tree.category}</div>
                                 <p class="text-[#1F2937] font-semibold text-xl">৳ ${tree.price}</p>
                             </div>
